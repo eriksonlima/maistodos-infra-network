@@ -33,7 +33,7 @@ jobs:
         terraform validate
         terraform plan -out=plan.tfplan
     
-    - if: github.ref == 'refs/heads/main'
+    - if: github.ref == 'refs/heads/master'
       name: Terraform apply
       run: |
         terraform apply -auto-approve
