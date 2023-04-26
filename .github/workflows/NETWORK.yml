@@ -29,7 +29,6 @@ jobs:
     
     - name: Terraform plan 
       run: |
-        cd hml/sqs-fifo
         terraform init
         terraform validate
         terraform plan -out=plan.tfplan
