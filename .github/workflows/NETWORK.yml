@@ -3,7 +3,7 @@ name: CI/CD Network
 on:
   push:
     branches:  
-       - main
+       - master
 
     #paths:
     # - '.github/workflows/SQS-HML.yml'
